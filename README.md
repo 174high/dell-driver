@@ -28,12 +28,19 @@ cases the license is mentioned in the file. All additional work made
 to building this package is licensed under the GPLv2.
 
 cd compat-wireless-3.6.6-1-snpc
-sudo su
+sudo su 
+
 make clean
+
+
 ./scripts/driver-select ath9k
+
 make
+
 make install
+
 modprobe ath9k
+
 exit
 
 
