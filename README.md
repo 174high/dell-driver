@@ -26,3 +26,15 @@ This work is a subset of the Linux kernel as such we keep the kernel's
 Copyright practice. Some files have their own copyright and in those
 cases the license is mentioned in the file. All additional work made
 to building this package is licensed under the GPLv2.
+
+cd compat-wireless-3.6.6-1-snpc
+sudo su
+make clean
+./scripts/driver-select ath9k
+make
+make install
+modprobe ath9k
+exit
+
+
+
